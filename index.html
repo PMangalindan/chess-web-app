@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Chess Web App</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<main class="app">
+		<section id="board" class="board" aria-label="Chess board"></section>
+
+		<aside class="panel">
+			<h1>Chess Web App</h1>
+			<div class="row status" id="status"></div>
+
+			<div class="row actions">
+				<button id="newGameBtn">New Game</button>
+				<button id="flipBtn" class="secondary">Flip Board</button>
+			</div>
+
+			<div class="row">
+				<strong>Moves</strong>
+				<ol id="movesList" class="moves"></ol>
+			</div>
+
+			<div class="legend">
+				Click a piece, then click a highlighted square to move.<br />
+				Rules included: legal move validation, check/checkmate, stalemate,
+				castling, en passant, and auto-queen promotion.
+			</div>
+		</aside>
+	</main>
+
+	<script src="app.js"></script>
+</body>
+</html>
